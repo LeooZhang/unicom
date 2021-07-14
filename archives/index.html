@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="en">
+<html class="theme-next mist use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,7 +93,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -186,12 +186,22 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/dkyao/archives/%20" rel="section">
+        <li class="menu-item menu-item-about">
+          <a href="/dkyao/about/%20" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Archives
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/dkyao/schedule/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
           </a>
         </li>
       
@@ -357,7 +367,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/dkyao/archives/%20%7C%7C%20archive">
+                <a href="/dkyao/archives">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
@@ -418,7 +428,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -567,7 +577,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
